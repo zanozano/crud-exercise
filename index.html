@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+			integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+			crossorigin="anonymous"
+		/>
+		<title>Desafio 2</title>
+	</head>
+
+	<body>
+		<main class="container">
+			<div class="row my-5">
+				<!--Crear archivo-->
+				<div class="col-3">
+					<form action="http://localhost:8080/crear">
+						<h4>Crear un archivo</h4>
+						<div class="form-group">
+							<label for="nombre">Nombre del archivo</label>
+							<input name="nombre" type="text" class="form-control" />
+						</div>
+						<div class="form-group">
+							<label for="contenido">Contenido</label>
+							<textarea name="contenido" class="form-control"></textarea>
+						</div>
+						<button class="btn btn-primary">Crear archivo</button>
+					</form>
+				</div>
+				<!--Leer archivo-->
+				<div class="col-3">
+					<form action="http://localhost:8080/leer">
+						<h4>Leer un archivo</h4>
+						<div class="form-group">
+							<label for="nombre">Nombre del archivo</label>
+							<input name="nombre" type="text" class="form-control" />
+						</div>
+						<button class="btn btn-success">Consultar archivo</button>
+					</form>
+				</div>
+				<!--Renombrar archivo-->
+				<div class="col-3">
+					<form action="http://localhost:8080/renombrar">
+						<h4>Renombrar un archivo</h4>
+						<div class="form-group">
+							<label for="nombre">Nombre del archivo</label>
+							<input name="nombre" type="text" class="form-control" />
+						</div>
+						<div class="form-group">
+							<label for="nuevoNombre">Nuevo nombre del archivo</label>
+							<input name="nuevoNombre" type="text" class="form-control" />
+						</div>
+						<button class="btn btn-danger">Renombrar archivo</button>
+					</form>
+				</div>
+				<!--Eliminar archivo-->
+				<div class="col-3">
+					<form action="http://localhost:8080/eliminar">
+						<h4>Eliminar un archivo</h4>
+						<div class="form-group">
+							<label for="nombre">Nombre del archivo</label>
+							<input name="nombre" type="text" class="form-control" />
+						</div>
+						<button class="btn btn-warning">Eliminar archivo</button>
+					</form>
+				</div>
+			</div>
+		</main>
+
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+			crossorigin="anonymous"
+		></script>
+		<script src="./index.js"></script>
+	</body>
+</html>
